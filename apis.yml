@@ -1,7 +1,28 @@
 aid: issa
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/issa.png
 name: Issa
-description: Issa is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Issa Compass is a software platform that simplifies Thailand visa
+  applications, operated by Issara Platforms Pte. Ltd. (Singapore) and Issa
+  Systems Co, Ltd. (Bangkok). The platform helps users identify which Thai visa
+  they qualify for and manages the end-to-end application process: a two-minute
+  eligibility questionnaire, document verification and pre-qualification checks,
+  real-time tracking of requirements against thousands of criteria, and a
+  money-back guarantee if a pre-qualified application is rejected. Supported visa
+  types include the Destination Thailand Visa (DTV), Long-Term Resident (LTR),
+  Retirement, Spouse, and Student visas. Issa is a portfolio company of 500
+  Global. There is no public developer API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/issa/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Visa
+- Immigration
+- Travel
+- Thailand
+- Compliance
+- Document Verification
+- LegalTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,22 @@ maintainers:
 common:
 - type: Website
   url: https://issacompass.com
+- type: SignUp
+  url: https://issacompass.com/app
+- type: TermsOfService
+  url: https://issacompass.com/terms
+- type: PrivacyPolicy
+  url: https://issacompass.com/privacy
+- type: Blog
+  url: https://issacompass.com/insights
+- type: Compliance
+  url: https://issacompass.com/security
+- type: DomainSecurity
+  url: security/issa-domain-security.yml
+- type: Conformance
+  url: conformance/issa-conformance.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
